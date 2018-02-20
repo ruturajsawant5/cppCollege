@@ -1,28 +1,34 @@
-#include <iostream>
+#include<iostream>
 using namespace std;
-
+//#include<conio.h>
+class palindrome
+{
+  public:
+    int n,r,rev,temp;
+    void check();
+};
+void palindrome :: check()
+{
+   rev=0,temp=n;
+   while(temp>0)
+    {
+      r=temp%10;
+      temp=temp/10;
+      rev=rev*10+r;
+    }
+    if(rev == n)
+    {
+      cout<<"Given number "<<n<<" is palindrome";
+    }
+    else
+      cout<<"Given number "<<n<<" is not palindrome";
+}
 int main()
 {
-     int n, num, digit, rev = 0;
-
-     cout << "Enter a positive number: ";
-     cin >> num;
-
-     n = num;
-
-     do
-     {
-         digit = num % 10;
-         rev = (rev * 10) + digit;
-         num = num / 10;
-     } while (num != 0);
-
-     cout << " The reverse of the number is: " << rev << endl;
-
-     if (n == rev)
-         cout << " The number is a palindrome";
-     else
-         cout << " The number is not a palindrome";
-
-    return 0;
+  //clrscr();
+  palindrome ob;
+  cout<<"Enter a number to check whether it is palindrome or not:";
+  cin>>ob.n;
+  ob.check();
+ // getch();
 }

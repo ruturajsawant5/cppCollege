@@ -14,7 +14,7 @@ class time
 			
 		}
 		void sum(time,time);
-};
+}t1,t2,t3;
 void time::sum(time t1,time t2)
 {
 	sec=t1.sec+t2.sec;
@@ -27,7 +27,6 @@ void time::sum(time t1,time t2)
 }
 int main()
 {
-	time t1,t2,t3;
 	cout<<"Enter 1st time:";
 	t1.get();
 	cout<<"Enter 2nd time:";
