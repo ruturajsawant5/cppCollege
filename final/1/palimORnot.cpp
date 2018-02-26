@@ -1,3 +1,4 @@
+//palimdrome using class
 #include<iostream>
 using namespace std;
 //#include<conio.h>
@@ -32,3 +33,11 @@ int main()
   ob.check();
  // getch();
 }
+/*
+o/p:-
+Enter a number to check whether it is palindrome or not:123321
+Given number 123321 is palindrome
+
+Enter a number to check whether it is palindrome or not:123123
+Given number 123123 is not palindrome
+*/

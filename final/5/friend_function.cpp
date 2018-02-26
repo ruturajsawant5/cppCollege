@@ -1,3 +1,4 @@
+//friend function
 #include<iostream>
 using namespace std;
 
@@ -22,3 +23,8 @@ int main(){
 	x.setValue();
 	cout<<"Mean Value = "<<mean(x)<<endl;
 }
+/*
+o/p:-
+Mean Value = 32.5
+
+*/

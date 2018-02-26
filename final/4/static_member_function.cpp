@@ -1,3 +1,4 @@
+//static member function
 #include<iostream>
 using namespace std;
 
@@ -11,13 +12,15 @@ class item{
 		void showCode(){
 			cout<<"object number = "<<code<<endl;
 		}
-		static void showCount(){
+		static void showCount();/*{
 			cout<<"count = "<<count<<endl;		
-		}
+		}*/
 };
 
 int item::count;
-
+void item::showCount(){
+			cout<<"count = "<<count<<endl;		
+		}
 int main(){
 	item a,b;
 	a.setCode();
@@ -30,3 +33,10 @@ int main(){
 	c.showCode();
 	return 0;
 }
+/* 
+o/p:-
+count = 2
+object number = 0
+object number = 1
+object number = 2
+*/

@@ -1,3 +1,4 @@
+//virtual base class
 #include<iostream>
 using namespace std;
 
@@ -58,3 +59,13 @@ m.get_marks(55.56,66.54);
 m.get_score(5);
 m.display();
 }
+/*
+o/p: -
+Roll Number : 66
+Marks Obtained :
+Part 1 :55.56
+Part 2 :66.54
+Sports :5
+Total marks :127.1
+
+*/

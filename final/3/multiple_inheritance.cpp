@@ -1,3 +1,4 @@
+//multiple inheritance
 #include<iostream>
 using namespace std;
 
@@ -34,3 +35,10 @@ p.get_m(10);
 p.get_n(20);
 p.display();
 }
+/*
+o/p:-
+m = 10
+n = 20
+m * n = 200
+
+*/

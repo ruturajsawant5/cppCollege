@@ -1,3 +1,4 @@
+//friend function exchange two object's values
 #include<iostream>
 using namespace std;
 class complex2;
@@ -16,7 +17,7 @@ class complex1{
 			y=img;
 		}
 		friend void exchange(complex1&,complex2&);
-		void show();
+		 void show();
 };
 class complex2{
 	float x,y;
@@ -33,7 +34,7 @@ class complex2{
 			y=img;
 		}
 		friend void exchange(complex1&,complex2&);
-		void show();
+		 void show();
 };
 
 void exchange(complex1 &c1,complex2 &c2){
@@ -54,11 +55,25 @@ cout<<x<<" + "<<y<<"i"<<endl;
 }
 int main(){
 	complex1 a(2.7,3.5);
-	complex2 b(1.6);
-	cout<<"A = ";
+	cout<<"Before\nA = ";	
+	a.show();
+	complex2 b(1.6,12.2);
+cout<<"B = ";
+	b.show();
+	cout<<"After\nA = ";
 	exchange(a,b);
 	a.show();
 	cout<<"B = ";
 	b.show();
 	return 0;
 }
+/*
+o/p:-
+Before
+A = 2.7 + 3.5i
+B = 1.6 + 12.2i
+After
+A = 1.6 + 12.2i
+B = 2.7 + 3.5i
+
+*/

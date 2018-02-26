@@ -1,3 +1,4 @@
+//operator overloading insertion and extraction
 #include<iostream>
 using namespace std;
 const int size=3;
@@ -66,3 +67,17 @@ q=m*2;
 cout<<"\np="<<p<<endl;
 cout<<"\nq="<<q<<endl;
 }
+/*
+o/p:-
+Enter the elements of vector m:(0,0,0)
+1
+1
+1
+
+m=(1,1,1)
+
+p=(2,2,2)
+
+q=(2,2,2)
+
+*/

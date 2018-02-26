@@ -1,3 +1,4 @@
+//obeject as function args
 #include<iostream>
 using namespace std;
 class time
@@ -40,3 +41,14 @@ int main()
 	t3.disp();
 	
 }
+/* o/p:-
+Enter 1st time:12
+44
+55
+Enter 2nd time:11  
+22
+33
+The 1st time is12:44:55
+The 2nd time is11:22:33
+The resultant time is24:7:28
+*/

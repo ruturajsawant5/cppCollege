@@ -1,3 +1,4 @@
+//Constructer Overloading
 #include<iostream>
 using namespace std;
 
@@ -5,8 +6,7 @@ class complex{
 	float x,y;
 	public:
 		complex(){
-			x=0;
-			y=0;
+			
 		}
 		complex(float a){
 			x=y=a;
@@ -43,3 +43,10 @@ int main(){
 	show(c);
 	return 0;
 }
+/*
+o/p: -
+A = 2.7 + 3.5i
+B = 1.6 + 1.6i
+C = 4.3 + 5.1i
+
+*/

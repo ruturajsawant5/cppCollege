@@ -1,3 +1,4 @@
+//multilevel inheritance
 #include<iostream>
 using namespace std;
 
@@ -46,3 +47,11 @@ int main()
 	std1.getMark(60.2,66.77);
 	std1.display();
 }
+/*
+o/p:-
+Roll Number : 66
+Marks in subject 1 :60.2
+Marks in subject 2 :66.77
+Total : 126.97
+
+*/

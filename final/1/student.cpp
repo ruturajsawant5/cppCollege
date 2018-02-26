@@ -1,3 +1,4 @@
+//array of object
 #include<iostream>
 using namespace std;
 
@@ -29,11 +30,26 @@ void student::putdata(void){
 }
 
 int main(){
-	student P1;
-	P1.getdata();
-	P1.putdata();
-	student P2;
-	P2.getdata();
-	P2.putdata();
+	student P[2];
+	P[0].getdata();
+	P[0].putdata();
+	//student P2;
+	P[1].getdata();
+	P[1].putdata();
 	return 0;
 }
+/*
+o/p:-
+Enter Name : Ruturaj
+Enter Marks of first subject : 66
+Enter Marks of second subject : 77
+Name : Ruturaj
+Average : 71.5
+Percentage : 71.5%
+Enter Name : Sawant
+Enter Marks of first subject : 55
+Enter Marks of second subject : 44
+Name : Sawant
+Average : 49.5
+Percentage : 49.5%
+*/
